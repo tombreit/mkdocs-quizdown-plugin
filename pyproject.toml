@@ -1,0 +1,27 @@
+# SPDX-FileCopyrightText: 2024 Thomas Breitner
+#
+# SPDX-License-Identifier: MIT
+
+[project]
+name = "mkdocs-quizdown-plugin"
+version = "0.0.1"
+description = "MkDocs plugin for quizdown-js"
+authors = [{name = "Thomas Breitner", email = "mail@thms.de"},]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Framework :: MkDocs",
+    "Topic :: Documentation",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+]
+
+dependencies = [
+    "mkdocs>=1.6",
+]
+
+
+[project.entry-points."mkdocs.plugins"]
+quizdown = "mkdocs_quizdown_plugin.plugin:QuizdownPlugin"
