@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2025 Thomas Breitner
+#
+# SPDX-License-Identifier: MIT
+
+graft src/mkdocs_quizdown_plugin/assets
+
+prune docs/
+prune .github/
+
+exclude \
+    .gitignore \
+    .pre-commit-config.yaml \
+    REUSE.toml \
+    mkdocs.yml
