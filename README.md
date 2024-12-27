@@ -9,8 +9,6 @@ SPDX-License-Identifier: MIT
 **🔥 This is work in progress - no liability for nothing.**
 
 - Allows embedding [quizdown-js](https://github.com/bonartm/quizdown-js) quizzes in MkDocs pages
-- Try the [quizdown live editor](https://bonartm.github.io/quizdown-live-editor/) from the author of `quizdown-js` to create your quiz markdown
-- MkDocs integration demo: [`docs/index.md`](docs/index.md)
 
 ## Install
 
@@ -27,6 +25,55 @@ python -m pip install \
   'mkdocs-quizdown-plugin @ git+https://github.com/tombreit/mkdocs-quizdown-plugin'
 ```
 
+You can use the requirement item `'mkdocs-quizdown-plugin @ git+https://github.com/tombreit/mkdocs-quizdown-plugin'` in your `requirements.txt`:
+
+```text
+# file: requirements.txt
+
+mkdocs
+mkdocs-quizdown-plugin @ git+https://github.com/tombreit/mkdocs-quizdown-plugin
+```
+
 ## Configuration
 
 See [`mkdocs.yml`](https://github.com/tombreit/mkdocs-quizdown-plugin/blob/main/mkdocs.yml)
+
+## Usage
+
+Embed your quiz as a Markdown block in your MkDocs Markdown page and enclose it with the mkdocs-quizdown start (`:::{quizdown}`) and end markers (`:::`):
+
+```md
+# Quiz
+
+Some **markdown** content.
+
+:::{quizdown}
+
+---
+primaryColor: steelblue
+shuffleQuestions: false
+shuffleAnswers: true
+---
+
+# What is the capital of France?
+
+> Paris is the capital and largest city of France.
+
+1. [x] Paris
+2. [ ] London
+3. [ ] Berlin
+4. [ ] Madrid
+
+:::
+
+Some **markdown** content.
+```
+
+- Try the [quizdown live editor](https://bonartm.github.io/quizdown-live-editor/) from the author of `quizdown-js` to prepare your quiz markdown
+- [quizdown-js configuration options](https://github.com/bonartm/quizdown-js/blob/main/docs/options.md)
+- MkDocs integration demo: [`docs/index.md`](docs/index.md)
+
+## Credits
+
+- [quizdown-js by Malte Bonart](https://github.com/bonartm/quizdown-js)
+- [MkDocs](https://www.mkdocs.org/)
