@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2024 Thomas Breitner
+#
+# SPDX-License-Identifier: MIT
+
 """
 A plugin that integrates quizdown-js into MkDocs.
 
