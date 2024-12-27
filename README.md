@@ -9,6 +9,9 @@ SPDX-License-Identifier: MIT
 **🔥 This is work in progress - no liability for nothing.**
 
 - Allows embedding [quizdown-js](https://github.com/bonartm/quizdown-js) quizzes in MkDocs pages
+- Multiple quizzes can be embedded on multiple pages, and/or
+- Multiple quizzes can be embedded on one page
+- `quizdown-js` Javascript library included, no CDNs involved
 
 ## Install
 

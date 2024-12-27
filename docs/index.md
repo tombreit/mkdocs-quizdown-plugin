@@ -34,4 +34,3 @@ Quizdown also renders formulas:
 :::
 
 Some **markdown** content.
-
