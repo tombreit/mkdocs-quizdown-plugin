@@ -9,6 +9,4 @@ prune .github/
 
 exclude \
     .gitignore \
-    .pre-commit-config.yaml \
-    REUSE.toml \
     mkdocs.yml

@@ -1,3 +1,4 @@
 site_name: mkdocs-quizdown-plugin
+site_url: https://tombreit.github.io/mkdocs-quizdown-plugin/
 plugins:
   - quizdown

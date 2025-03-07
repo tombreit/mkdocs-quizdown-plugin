@@ -13,6 +13,10 @@ SPDX-License-Identifier: MIT
 - Multiple quizzes can be embedded on one page
 - `quizdown-js` Javascript library included, no CDNs involved
 
+## Demo
+
+<https://tombreit.github.io/mkdocs-quizdown-plugin/>
+
 ## Install
 
 ### via PyPI
