@@ -15,7 +15,11 @@ SPDX-License-Identifier: MIT
 
 ## Install
 
-*Currently only available via it's git repository.*
+### via PyPI
+
+<https://pypi.org/project/mkdocs-quizdown-plugin/>
+
+### via git
 
 ```bash
 # Initial install:
@@ -42,6 +46,7 @@ mkdocs-quizdown-plugin @ git+https://github.com/tombreit/mkdocs-quizdown-plugin
 See [`mkdocs.yml`](https://github.com/tombreit/mkdocs-quizdown-plugin/blob/main/mkdocs.yml)
 
 ## Usage
+*Currently only available via it's git repository.*
 
 Embed your quiz as a Markdown block in your MkDocs Markdown page and enclose it with the mkdocs-quizdown start (`:::{quizdown}`) and end markers (`:::`):
 

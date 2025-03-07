@@ -4,7 +4,7 @@
 
 [project]
 name = "mkdocs-quizdown-plugin"
-version = "0.0.1"
+dynamic = ["version"]
 description = "MkDocs plugin for quizdown-js"
 authors = [{name = "Thomas Breitner", email = "mail@thms.de"},]
 license = {file = "LICENSE"}
@@ -22,6 +22,23 @@ dependencies = [
     "mkdocs>=1.6",
 ]
 
+[project.optional-dependencies]
+pypi = [
+    "build",
+    "twine",
+]
 
 [project.entry-points."mkdocs.plugins"]
 quizdown = "mkdocs_quizdown_plugin.plugin:QuizdownPlugin"
+
+[project.urls]
+Repository = "https://github.com/tombreit/mkdocs-quizdown-plugin"
+Homepage = "https://github.com/tombreit/mkdocs-quizdown-plugin"
+Documentation = "https://github.com/tombreit/mkdocs-quizdown-plugin/blob/main/README.md"
+Issues = "https://github.com/tombreit/mkdocs-quizdown-plugin/issues"
+
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
